@@ -1,0 +1,646 @@
+.check-div {
+    border: 1px dashed black;
+}
+body {
+    background-color: #f7f7f7;
+    padding-top: 66px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 66px;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,.1);
+}
+.scroll-view {
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    overflow: auto;
+}
+.image-container {
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(50,50,50,.1);
+}
+#top-header{
+    height: 66px;
+}
+#home {
+    height: 100vh;
+    min-height: 400px;
+}
+#home .container .row {
+    padding-top: 16vh;
+}
+#home .home-utp {
+    background-color: white;
+    border-left: 5px solid orangered;
+    overflow: auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#home .home-utp h3{
+    font-size: 1.8rem;
+}
+#home .home-title{
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#services .service-item a {
+    color: #333;
+}
+#services .service-item .image-container {
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+#services .service-item .image-container .hover-screen {
+    position: absolute;
+    top:0;bottom: 0;
+    left:0;right: 0;
+    background-color: rgba(30,30,30,.6);
+    opacity: 0;
+    transition: 150ms;
+}
+#services .service-item .image-container .hover-screen p{
+    color: #fff;
+    position: absolute;
+    top:0;bottom: 0;
+    left:0;right: 0;
+    margin: auto;
+    height: 20px;
+    text-align: center;
+}
+#services .service-item:hover a {
+    color: #367;
+
+}
+#services .service-item:hover .image-container .hover-screen {
+    opacity: 1;
+}
+
+
+#counters {
+    background: #333;
+    color: white;
+    position: relative;
+}
+#counters .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+}
+#counters .container {
+    position: relative;
+    z-index:3;
+}
+#counters .counter-number {
+    font-size: 70px;
+    font-weight: 300;
+}
+#counters .counter-label {
+    color: #999;
+    font-size: 18px;
+    font-weight: 400;
+}
+#testimonials .box-testimony {
+    margin-bottom: 2em;
+    float: left;
+}
+
+#testimonials .box-testimony a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#testimonials .box-testimony a:hover,
+#testimonials .box-testimony a:focus,
+#testimonials .box-testimony a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#testimonials .box-testimony blockquote {
+    border-left: none;
+    padding: 30px;
+    background: #589a6f;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+}
+
+#testimonials .box-testimony blockquote:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 40px;
+    border-top: 10px solid black;
+    border-top-color: #589a6f;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+#testimonials .box-testimony blockquote p {
+    font-size: 16px;
+    color: #fff;
+}
+
+#testimonials .box-testimony .author {
+    line-height: 20px;
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+#testimonials .box-testimony .author a {
+    color: #589a6f;
+}
+
+#testimonials .box-testimony .author a:hover {
+    text-decoration: underline;
+}
+
+#testimonials .box-testimony .author > figure {
+    float: left;
+    margin-right: 10px;
+}
+
+#testimonials .box-testimony .author > figure img {
+    width: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#testimonials .box-testimony .author p {
+    float: left;
+    margin-top: 10px;
+}
+
+#testimonials .box-testimony .author .subtext {
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: 400 !important;
+}
+
+.footer-distributed{
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+
+    padding: 55px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 50%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font-size: 36px;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 15%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.service-info {
+    color: #444;
+}
+.service-info b,
+.service-info strong,
+.service-info h1,
+.service-info h2,
+.service-info h3,
+.service-info h4,
+.service-info h5,
+.service-info h6 {
+    color: black;
+}
+.service-info table td {
+    padding: 10px;
+}
+.extra-services p {
+    font-size: 12px;
+}
+.extra-services p a {
+    color: #4282ab;
+}
+blockquote.blockquote {
+    margin: 20px 0px 20px 0px;
+    padding: 20px 20px 20px 20px;
+    display: block;
+    border: 0px solid #ddd;
+    border-left: 5px solid #f60;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), inset 0 0 1px 0 rgba(255, 255, 255, 1);
+    -webkit-border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    border-radius: 0px 3px 3px 0px;
+    font-size: 14px;
+    color: #333;
+    line-height: 110%;
+}
+div.scrollable {
+    background-color: #fafafa;
+    padding: 10px 10px 10px 20px;
+    border-left: 3px solid orange;
+    transform-origin: top;
+    transition: 300ms;
+    transform: rotateX(0deg);
+    height: auto;
+    margin: -15px 0 30px;
+    overflow: auto;
+}
+div.scrollable:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.scrollable.scrolled {
+    transform: rotateX(90deg);
+    height: 0;
+    margin: -15px 0 5px;
+}
+div.scrollable h5 {
+    margin-top: 50px;
+}
+.pointer {
+    cursor: pointer;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+}
+
+-webkit-@keyframes shake {
+    1%, 9% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+    2%, 8% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    3%, 5%, 7% {
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+
+    4%, 6% {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    10%, 100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+-moz-@keyframes shake {
+     1%, 9% {
+         -webkit-transform: rotate(10deg);
+         -moz-transform: rotate(10deg);
+         -ms-transform: rotate(10deg);
+         -o-transform: rotate(10deg);
+         transform: rotate(10deg);
+     }
+
+     2%, 8% {
+         -webkit-transform: rotate(-10deg);
+         -moz-transform: rotate(-10deg);
+         -ms-transform: rotate(-10deg);
+         -o-transform: rotate(-10deg);
+         transform: rotate(-10deg);
+     }
+
+     3%, 5%, 7% {
+         -webkit-transform: rotate(20deg);
+         -moz-transform: rotate(20deg);
+         -ms-transform: rotate(20deg);
+         -o-transform: rotate(20deg);
+         transform: rotate(20deg);
+     }
+
+     4%, 6% {
+         -webkit-transform: rotate(-20deg);
+         -moz-transform: rotate(-20deg);
+         -ms-transform: rotate(-20deg);
+         -o-transform: rotate(-20deg);
+         transform: rotate(-20deg);
+     }
+     10%, 100% {
+         -webkit-transform: rotate(0deg);
+         -moz-transform: rotate(0deg);
+         -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+         transform: rotate(0deg);
+     }
+ }
+-ms-@keyframes shake {
+    1%, 9% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+    2%, 8% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    3%, 5%, 7% {
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+
+    4%, 6% {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    10%, 100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+-o-@keyframes shake {
+   1%, 9% {
+       -webkit-transform: rotate(10deg);
+       -moz-transform: rotate(10deg);
+       -ms-transform: rotate(10deg);
+       -o-transform: rotate(10deg);
+       transform: rotate(10deg);
+   }
+
+   2%, 8% {
+       -webkit-transform: rotate(-10deg);
+       -moz-transform: rotate(-10deg);
+       -ms-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+       transform: rotate(-10deg);
+   }
+
+   3%, 5%, 7% {
+       -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+       -ms-transform: rotate(20deg);
+       -o-transform: rotate(20deg);
+       transform: rotate(20deg);
+   }
+
+   4%, 6% {
+       -webkit-transform: rotate(-20deg);
+       -moz-transform: rotate(-20deg);
+       -ms-transform: rotate(-20deg);
+       -o-transform: rotate(-20deg);
+       transform: rotate(-20deg);
+   }
+   10%, 100% {
+       -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+       -ms-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+       transform: rotate(0deg);
+   }
+}
+@keyframes shake {
+    1%, 9% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+    2%, 8% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    3%, 5%, 7% {
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+
+    4%, 6% {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    10%, 100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.fas.fa-phone.fa-2x {
+    -webkit-animation:shake 10s linear both infinite;
+    -moz-animation: shake 10s linear both infinite;
+    -ms-animation: shake 10s linear both infinite;
+    -o-animation:shake 10s linear both infinite;
+    animation:shake 10s linear both infinite;
+}
