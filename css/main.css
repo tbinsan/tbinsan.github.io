@@ -188,6 +188,7 @@ header {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
 }
 
 #testimonials .box-testimony .author p {
