@@ -13,6 +13,21 @@ header {
     z-index: 1000;
     box-shadow: 0 3px 15px rgba(0,0,0,.1);
 }
+header .logo-container img {
+    float: left;
+    margin-top: -8px;
+    height: 75px;
+}
+header .logo-container span {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-left: 10px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    width: 180px;
+}
 .scroll-view {
     background-color: white;
     box-shadow: 0 3px 10px rgba(0,0,0,.15);
@@ -26,9 +41,13 @@ header {
 .navbar {
     background-color: #fff;
     box-shadow: 0 3px 10px rgba(50,50,50,.1);
+    position: relative;
+    z-index: 99;
 }
 #top-header{
     height: 66px;
+    position: relative;
+    z-index: 100;
 }
 #home {
     height: 100vh;
@@ -418,6 +437,14 @@ div.scrollable h5 {
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
+    header .logo-container img {
+        float: left;
+        margin-top: -3px;
+        height: 57px;
+    }
+    header .logo-container span {
+        display: none;
+    } 
 
     .footer-distributed{
         font: bold 14px sans-serif;
